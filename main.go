@@ -18,7 +18,7 @@ type User struct {
 
 func main() {
 	App := fiber.New(fiber.Config{
-		Prefork:      false,
+		Prefork:      true,
 		AppName:      "App",
 		ServerHeader: "App",
 		JSONEncoder:  sonic.Marshal,
